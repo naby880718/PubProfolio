@@ -1,0 +1,868 @@
+.align {
+	display: flex;
+	align-items: center;
+}
+.jc_sb {
+	justify-content: space-between;
+}
+
+.card {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 40%;
+	background-color: #fff;
+	margin: 20px;
+	border: 1px solid #f6f6f6;
+	padding: 8px;
+}
+
+.card .img_box {
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	max-height: 240px;
+
+	overflow: hidden;
+	text-align: center;
+}
+
+.card .img_box img {
+	height: 100%;
+	width: 100%;
+}
+
+.card .inner_box {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-moz-box-orient: vertical;
+	-moz-box-direction: normal;
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	margin-top: 20px;
+	min-height: 140px;
+}
+
+.card .inner_box.free {
+	min-height: 130px;
+}
+
+.card .inner_box.free ._inner_bottom {
+	border-top: 1px solid #e5e5e5;
+	padding-top: 10px;
+}
+
+.card .inner_box ._inner_bottom {
+	margin-top: 20px;
+}
+
+.card .inner_box .price_wrap + div {
+	border-top: 1px solid #e5e5e5;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+
+.card .inner_box .labels .label {
+	border-radius: 4px;
+	display: inline-block;
+	font-size: 0.625rem;
+	margin-bottom: 4px;
+	padding: 2px 8px;
+}
+
+.card .inner_box .labels .label + .label {
+	margin-left: 4px;
+}
+
+.card .inner_box .labels .label.primary {
+	border: 1px solid #007f5e;
+	color: #007f5e;
+}
+
+.card .inner_box .labels .label.gray {
+	border: 1px solid #ccc;
+	color: #525252;
+}
+
+.card .inner_box .tlt {
+	color: #000;
+	font-size: 1rem;
+	font-weight: 400;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.card .inner_box .price_wrap {
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-box-align: baseline;
+	-moz-box-align: baseline;
+	-ms-flex-align: baseline;
+	-webkit-align-items: baseline;
+	align-items: baseline;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	text-align: right;
+}
+
+.card .inner_box .price_wrap,
+.card .inner_box .price_wrap .price_area {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.card .inner_box .price_wrap .price_area {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-box-pack: end;
+	-moz-box-pack: end;
+	-ms-flex-pack: end;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+.card .inner_box .price_wrap .origin_price {
+	color: #8f8f8f;
+	font-size: 0.875rem;
+	font-weight: 400;
+	text-align: left;
+	text-decoration: line-through;
+}
+
+.card .inner_box .price_wrap .discount_label {
+	background-color: #ff6f6f;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	font-size: 0.75rem;
+	font-weight: 400;
+	margin-right: 4px;
+	padding: 2px 8px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.card .inner_box .price_wrap .price {
+	color: #000;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.card .heart_btn .ico_heart {
+	top: 0;
+}
+
+.card.sm .img_box {
+	aspect-ratio: 160/120;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.card.sm .inner_box {
+	margin-top: 12px;
+	min-height: 75px;
+}
+
+.card.sm .inner_box ._inner_top {
+	min-height: 40px;
+}
+
+.card.sm .inner_box ._inner_bottom {
+	margin-top: 12px;
+}
+
+.card.sm .inner_box .price_wrap + div {
+	margin-top: 12px;
+	padding-top: 8px;
+}
+
+.card.sm .inner_box .labels .label {
+	border-radius: 4px;
+	display: inline-block;
+	font-size: 0.625rem;
+	margin-bottom: 4px;
+	padding: 2px 4px;
+}
+
+.card.sm .inner_box .labels .label + .label {
+	margin-left: 4px;
+}
+
+.card.sm .inner_box .tlt {
+	color: #000;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.5;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.card.sm .inner_box .price_wrap .origin_price {
+	color: #8f8f8f;
+	font-size: 0.75rem;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+
+.card.sm .inner_box .price_wrap .discount_label {
+	color: #fff;
+	font-size: 0.625rem;
+	font-weight: 400;
+	padding: 2px 4px;
+}
+
+.card.sm .inner_box .price_wrap .price {
+	color: #000;
+	font-size: 0.875rem;
+	font-weight: 700;
+}
+
+.card.sm .inner_box .heart_btn {
+	height: 20px;
+	width: 20px;
+}
+
+.card.sm .inner_box .heart_btn .ico_heart {
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+	display: inline-block;
+	font-size: 0;
+	height: 20px;
+	width: 20px;
+}
+
+.card.rank {
+	position: relative;
+	z-index: 3;
+}
+
+.card.rank .ico_rank {
+	display: inline-block;
+	height: 42px;
+	left: 10px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 40px;
+}
+
+.card.rank .ico_rank span {
+	color: #356f4f;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 37px;
+	margin-left: -5px;
+}
+
+.card.shadow {
+	background-color: #fff;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	padding: 20px;
+}
+
+.card.typeC {
+	min-width: 160px;
+}
+
+.card.typeC.rankType {
+	position: relative;
+}
+
+.card.typeC .rank {
+	display: inline-block;
+	height: 42px;
+	left: 8px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 40px;
+}
+
+.card.typeC .rank span {
+	color: #356f4f;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 37px;
+	margin-left: -5px;
+}
+
+.card.typeC .img_box {
+	border-radius: 4px;
+	height: 120px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.card.typeC .img_box img {
+	height: 100%;
+}
+
+.card.typeC .txt_box {
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	margin-top: 8px;
+	width: 100%;
+}
+
+.card.typeC .txt_box .tlt {
+	color: #525252;
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.card.typeE {
+	background-color: #fff;
+	border-radius: 12px;
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	margin-top: 20px;
+	padding: 20px;
+	width: 100%;
+}
+
+.card.typeE .img_box {
+	border-radius: 4px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.card.typeE .img_box img {
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.card.typeE .txt_box {
+	margin-top: 8px;
+	width: 100%;
+}
+
+.card.typeE .txt_box .top_box {
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.card.typeE .txt_box .top_box .tlt {
+	color: #525252;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.4;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: keep-all;
+}
+
+.card.typeE .txt_box .md_box {
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	margin-top: 8px;
+}
+
+.card.typeE .txt_box .md_box .price {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	color: #525252;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	font-weight: 700;
+	text-align: right;
+}
+
+.card.typeE .txt_box .foot_box {
+	margin-top: 8px;
+}
+
+.card.typeE .txt_box .foot_box .thumb_txt {
+	color: #525252;
+	font-size: 0.75rem;
+}
+
+.card.typeU {
+	border-radius: 12px;
+	width: 100%;
+}
+
+.card.typeU .img_box {
+	aspect-ratio: 353/264;
+	border-radius: 4px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.card.typeU .img_box img {
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.card.typeU .txt_box {
+	margin-top: 8px;
+	width: 100%;
+}
+
+.card.typeU .txt_box .top_box {
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.card.typeU .txt_box .top_box .tlt {
+	color: #525252;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.4;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: keep-all;
+}
+
+.card.typeU .txt_box .md_box {
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	margin-top: 8px;
+}
+
+.card.typeU .txt_box .md_box .price {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	color: #525252;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	font-weight: 700;
+	text-align: right;
+}
+
+.card.typeU .txt_box .foot_box {
+	margin-top: 8px;
+}
+
+.card.typeU .txt_box .foot_box .thumb_txt {
+	color: #525252;
+	font-size: 0.75rem;
+}
+
+.card.typeRank {
+	position: relative;
+}
+
+.card.typeRank .rank {
+	display: inline-block;
+	height: 38px;
+	left: 10px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 33px;
+	z-index: 3;
+}
+
+.card.typeRank .rank span {
+	color: #356f4f;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.card.typeRank .img_box {
+	border-radius: 4px;
+	height: 275px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.card.typeRank .img_box img {
+	height: 100%;
+}
+
+.card.typeRank .txt_box {
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	margin-top: 12px;
+	width: 100%;
+}
+
+.card.typeRank .txt_box .tlt {
+	color: #000;
+	font-size: 16px;
+	font-weight: 500;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.card.sm_shadow {
+	background-color: #fff;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	padding: 12px;
+}
+
+.card.sm_shadow .img_box {
+	aspect-ratio: 160/120;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.card.sm_shadow .img_box img {
+	height: 100%;
+}
+
+.card.sm_shadow .inner_box {
+	margin-top: 12px;
+	min-height: auto;
+}
+
+.card.sm_shadow .inner_box ._inner_top {
+	min-height: 40px;
+}
+
+.card.sm_shadow .inner_box ._inner_bottom {
+	margin-top: 12px;
+}
+
+.card.sm_shadow .inner_box .price_wrap + div {
+	margin-top: 12px;
+	padding-top: 8px;
+}
+
+.card.sm_shadow .inner_box .labels .label {
+	border-radius: 4px;
+	display: inline-block;
+	font-size: 0.625rem;
+	margin-bottom: 4px;
+	padding: 2px 4px;
+}
+
+.card.sm_shadow .inner_box .labels .label + .label {
+	margin-left: 4px;
+}
+
+.card.sm_shadow .inner_box .tlt {
+	color: #000;
+	display: block;
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 1.5;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.card.sm_shadow .inner_box .price_wrap .origin_price {
+	color: #8f8f8f;
+	font-size: 0.75rem;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+
+.card.sm_shadow .inner_box .price_wrap .discount_label {
+	color: #fff;
+	font-size: 0.625rem;
+	font-weight: 400;
+	padding: 2px 4px;
+}
+
+.card.sm_shadow .inner_box .price_wrap .price {
+	color: #000;
+	font-size: 0.875rem;
+	font-weight: 700;
+}
+
+.card.sm_shadow .inner_box .jc_cn {
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	border-top: 1px solid #e5e5e5;
+	-webkit-justify-content: center;
+	justify-content: center;
+	min-height: auto;
+}
+
+.card.sm_shadow .inner_box .heart_btn {
+	height: 20px;
+	width: 20px;
+}
+
+.card.sm_shadow .inner_box .heart_btn .ico_heart {
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+	display: inline-block;
+	font-size: 0;
+	height: 20px;
+	width: 20px;
+}
+
+.card.free {
+	width: 20%;
+	background-color: #fff;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	padding: 8px;
+}
+
+.card.free > button {
+	width: 100%;
+}
+
+.card.free .img_box {
+	aspect-ratio: 144/108;
+	border-radius: 4px;
+	position: relative;
+}
+
+.card.free .img_box img {
+	height: 100%;
+}
+
+.card.free .free_desc {
+	color: #525252;
+	font-size: 0.875rem;
+	font-weight: 300;
+	line-height: 1.4;
+	margin-top: 8px;
+}
+
+.card.free .free_desc,
+.card.free .free_desc * {
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+.card.free .free_desc * {
+	color: #525252 !important;
+	font-size: 0.875rem !important;
+}
+
+.card.free .txt_box {
+	margin-top: 12px;
+}
+
+.card.free .txt_box .tlt {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #000;
+	font-size: 0.75rem;
+	font-weight: 400;
+	max-width: -moz-calc(100% - 3px);
+	max-width: calc(100% - 3px);
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.card.free .txt_box .heart_btn {
+	height: 20px;
+	width: 20px;
+}
+
+.card.free .txt_box .heart_btn .ico_heart {
+	-webkit-background-size: auto 100%;
+	background-size: auto 100%;
+	display: inline-block;
+	font-size: 0;
+	height: 20px;
+	width: 20px;
+}
+
+.card.typeF {
+	background-color: #fff;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+	padding: 20px;
+}
+
+.card.typeF .top_info {
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.card.typeF .top_info .title {
+	color: #333;
+	font-size: 0.875rem;
+	font-weight: 300;
+	max-width: 100%;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.card.typeF .top_info .date {
+	-ms-flex-negative: 0;
+	color: #333;
+	-webkit-flex-shrink: 0;
+	flex-shrink: 0;
+	font-size: 0.75rem;
+	font-weight: 300;
+	margin-left: 10px;
+}
+
+.card.typeF .img_box {
+	aspect-ratio: 313/234;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.card.typeF .img_box.typeVideo:before {
+	background-color: rgba(0, 0, 0, 0.3);
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+}
+
+.card.typeF .img_box.typeVideo:after {
+	-webkit-background-size: contain;
+	background-size: contain;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 56px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 56px;
+	z-index: 10;
+}
