@@ -13,6 +13,7 @@ interface ButtonProps {
     | "black"
     | "dim"
     | "white"
+    | "blue100"
     | "skyblue";
   size?: "xsmall" | "small" | "medium" | "large" | "full" | "xlarge" | "hero";
   onBullet?: boolean; // isc 용 bullet 속성 추가
@@ -94,6 +95,13 @@ export const ButtonMui = ({ children, onClick, ...others }: ButtonProps) => {
                 case false:
                   return { fill: "var(--skyblue400)" };
               }
+              case "blue100":
+                switch (disabled) {
+                  case true:
+                    return { fill: "var(--blue100)" };
+                  case false:
+                    return { fill: "var(--blue100)" };
+                }
             default:
               return { fill: "var(--bg-f)" };
           }
@@ -141,6 +149,13 @@ export const ButtonMui = ({ children, onClick, ...others }: ButtonProps) => {
                 case false:
                   return { fill: "var(--skyblue400)" };
               }
+              case "blue100":
+                switch (disabled) {
+                  case true:
+                    return { fill: "var(--blue100)" };
+                  case false:
+                    return { fill: "var(--blue100)" };
+                }
             default:
               return { fill: "var(--bg-f)" };
               break;
@@ -189,6 +204,13 @@ export const ButtonMui = ({ children, onClick, ...others }: ButtonProps) => {
                 case false:
                   return { fill: "var(--magenta400)" };
               }
+                            case "blue100":
+                switch (disabled) {
+                  case true:
+                    return { fill: "var(--blue100)" };
+                  case false:
+                    return { fill: "var(--blue100)" };
+                }
             default:
               return { fill: "var(--bg-f)" };
           }
